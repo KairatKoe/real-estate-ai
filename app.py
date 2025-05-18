@@ -8,31 +8,33 @@ HTML_FORM = """
 <html>
 <head>
     <title>Real Estate Search</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-        }
-        .form-box {
-            text-align: center;
-        }
-        input[type="text"] {
-            width: 400px;
-            padding: 10px;
-            font-size: 16px;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-        }
-        h2, h3 {
-            color: #333;
-        }
-    </style>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        padding-top: 15vh;
+    }
+    .form-box {
+        text-align: center;
+    }
+    input[type="text"] {
+        width: 400px;
+        padding: 10px;
+        font-size: 16px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    h2, h3 {
+        color: #333;
+    }
+</style>
+
 </head>
 <body>
     <div class="form-box">
