@@ -1,4 +1,5 @@
 from flask import Flask, request, render_template_string
+import os
 
 app = Flask(__name__)
 
@@ -48,3 +49,14 @@ HTML_FORM = """
 </body>
 </html>
 """
+
+@app.route("/", methods=["GET", "POST"])
+def home():
+    result = None
+    if request.method == "POST":
+        result = request.form.get("query")
+    return render_template_string(HTML_FORM, result=result)
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
